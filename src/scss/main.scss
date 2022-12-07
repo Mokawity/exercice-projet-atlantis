@@ -60,9 +60,12 @@ video {
 }
 
 body {
-  text-decoration: none;
   background-color: #000000ca;
   color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 header {
@@ -78,18 +81,15 @@ header {
 
 .introduction-text {
   text-align: center;
-  font-family: Lato-Light;
+  font-family: Lato;
+  font-weight: 300;
   font-size: 18px;
-  color: #ffffff;
-  letter-spacing: 0;
   padding-top: 30px;
 }
 
 .navigation-bar {
   font-family: LaoMN;
   font-size: 16px;
-  color: #ffffff;
-  letter-spacing: 0;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -101,10 +101,79 @@ header {
   margin-right: 40px;
 }
 
+.quote {
+  font-family: GurmukhiMN;
+  font-size: 27px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+span {
+  font-family: GurmukhiMN;
+  font-size: 60px;
+  text-align: center;
+}
+
+hr {
+  width: 40px;
+  margin: auto;
+}
+
+.button-reservation {
+  border: 1px solid #ffe2cb;
+  border-radius: 48px;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 70 240px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  text-align: center;
+}
+
 .Specialities-title {
   font-family: LaoMN;
   font-size: 29px;
-  color: #ffffff;
   letter-spacing: 0;
   padding-top: 47px;
+}
+
+.speciality-img {
+  width: 270px;
+}
+
+.ingredient-img {
+  width: 121px;
+}
+
+.golden-box {
+  width: 121px;
+  z-index: 1;
+}
+
+.speciality-title {
+  font-family: LaoMN;
+  font-size: 36px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+.speciality-description {
+  font-family: Lato-Regular;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+footer {
+  background-color: black;
+  font-family: LaoMN;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+
+.footer-title {
+  font-size: 28px;
+  padding-top: 20px;
 }
