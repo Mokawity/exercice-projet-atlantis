@@ -58,3 +58,53 @@ video {
 .container {
   padding-bottom: 10px;
 }
+
+body {
+  text-decoration: none;
+  background-color: #000000ca;
+  color: white;
+}
+
+header {
+  background-image: url(../img/Header-img.png);
+  background-position: center;
+}
+
+.logo {
+  margin: auto;
+  width: 180px;
+  height: 180px;
+}
+
+.introduction-text {
+  text-align: center;
+  font-family: Lato-Light;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0;
+  padding-top: 30px;
+}
+
+.navigation-bar {
+  font-family: LaoMN;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 23px;
+  padding-bottom: 50px;
+  text-decoration: none;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.Specialities-title {
+  font-family: LaoMN;
+  font-size: 29px;
+  color: #ffffff;
+  letter-spacing: 0;
+  padding-top: 47px;
+}
