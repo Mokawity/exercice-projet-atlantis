@@ -43,30 +43,6 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
-.row + .row {
-  margin-top: 16px;
-}
-
-.row > .col,
-.row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: rgba(86, 61, 124, 0.15);
-  border: 1px solid rgba(86, 61, 124, 0.2);
-}
-
-.container {
-  padding-bottom: 10px;
-}
-
-@media (max-width: 992px) {
-  .golden-box {
-    display: none;
-  }
-  .ingredient-img {
-    display: none;
-  }
-}
 
 body {
   background-color: #000000ca;
@@ -77,9 +53,12 @@ a {
   text-decoration: none;
 }
 
+//HEADER
+
 header {
   background-image: url(../img/Header-img.png);
   background-position: center;
+  padding-top: 32px;
 }
 
 .logo {
@@ -110,17 +89,192 @@ header {
   margin-right: 40px;
 }
 
+//HEADER
+
+//SPECIAL 1
+
+.speciality-text {
+  background-color: #212121;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.Specialities-title {
+  font-family: LaoMN;
+  font-size: 29px;
+  letter-spacing: 0;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.speciality-img-1 {
+  width: auto;
+  margin: auto;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.ingredient-img-1 {
+  width: 121px;
+}
+
+@media (max-width: 992px) {
+  .ingredient-img-1 {
+    display: none;
+  }
+}
+
+.golden-box-1 {
+  width: 121px;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .golden-box-1 {
+    display: none;
+  }
+}
+
+.speciality-title-1 {
+  font-family: LaoMN;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0;
+  padding-top: 20px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.speciality-description-1 {
+  font-family: Lato-Regular;
+  font-size: 13px;
+  color: #ffffff;
+  letter-spacing: 0;
+  padding-bottom: 30px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+//SPECIAL 1
+
+//SPECIAL 2
+
+.speciality-img-2 {
+  width: auto;
+  margin: auto;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.ingredient-img-2 {
+  width: 121px;
+  margin-left: 21px;
+}
+
+@media (max-width: 992px) {
+  .ingredient-img-2 {
+    display: none;
+  }
+}
+
+.golden-box-2 {
+  width: 121px;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .golden-box-2 {
+    display: none;
+  }
+}
+
+.speciality-title-2 {
+  font-family: LaoMN;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0;
+  padding-top: 20px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.speciality-description-2 {
+  font-family: Lato-Regular;
+  font-size: 13px;
+  color: #ffffff;
+  letter-spacing: 0;
+  padding-bottom: 30px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+//SPECIAL 2
+
+//SPECIAL 3
+
+.speciality-img-3 {
+  width: auto;
+  margin: auto;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.ingredient-img-3 {
+  width: 121px;
+}
+
+@media (max-width: 992px) {
+  .ingredient-img-3 {
+    display: none;
+  }
+}
+
+.golden-box-3 {
+  width: 121px;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .golden-box-3 {
+    display: none;
+  }
+}
+
+.speciality-title-3 {
+  font-family: LaoMN;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 0;
+  padding-top: 20px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+.speciality-description-3 {
+  font-family: Lato-Regular;
+  font-size: 13px;
+  color: #ffffff;
+  letter-spacing: 0;
+  padding-bottom: 80px;
+  margin-left: 21px;
+  margin-right: 21px;
+}
+
+//SPECIAL 3
+
+//MENU
+
 .main-title-menu {
   text-align: center;
-  font-size: 28px;
+  font-size: 25px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 .title-decoration {
   color: #ff9900;
-}
-
-.menu-background {
-  background-color: red;
 }
 
 .title-menu {
@@ -132,6 +286,7 @@ header {
 .description-menu {
   font-weight: 100;
   font-size: 12px;
+  padding-bottom: 20px;
 }
 
 .price-menu {
@@ -139,17 +294,31 @@ header {
   margin-left: 200px;
 }
 
+.arrow-menu {
+  position: relative;
+  left: 45px;
+  bottom: 20px;
+}
+
+//MENU
+
+//QUOTE
+
 .quote {
   font-family: GurmukhiMN;
   font-size: 27px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 hr {
   width: 40px;
   margin: auto;
 }
+
+//QUOTE
+
+//RESERVATION
 
 .button-reservation {
   width: 150px;
@@ -164,40 +333,9 @@ hr {
   width: auto;
 }
 
-.Specialities-title {
-  font-family: LaoMN;
-  font-size: 29px;
-  letter-spacing: 0;
-  padding-top: 47px;
-}
+//RESERVATION
 
-.speciality-img {
-  width: auto;
-  margin: auto;
-}
-
-.ingredient-img {
-  width: 121px;
-}
-
-.golden-box {
-  width: 121px;
-  z-index: 1;
-}
-
-.speciality-title {
-  font-family: LaoMN;
-  font-size: 18px;
-  color: #ffffff;
-  letter-spacing: 0;
-}
-
-.speciality-description {
-  font-family: Lato-Regular;
-  font-size: 13px;
-  color: #ffffff;
-  letter-spacing: 0;
-}
+//FOOTER
 
 footer {
   background-color: black;
@@ -208,6 +346,8 @@ footer {
 
 .logo-insta {
   width: 50px;
+  position: relative;
+  left: 60px;
 }
 
 .logo-facebook {
@@ -216,5 +356,13 @@ footer {
 
 .footer-title {
   font-size: 28px;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
+
+.credit {
+  position: relative;
+  right: 30px;
+}
+
+//FOOTER
