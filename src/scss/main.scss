@@ -59,6 +59,15 @@ video {
   padding-bottom: 10px;
 }
 
+@media (max-width: 992px) {
+  .golden-box {
+    display: none;
+  }
+  .ingredient-img {
+    display: none;
+  }
+}
+
 body {
   background-color: #000000ca;
   color: white;
@@ -101,17 +110,40 @@ header {
   margin-right: 40px;
 }
 
+.main-title-menu {
+  text-align: center;
+  font-size: 28px;
+}
+
+.title-decoration {
+  color: #ff9900;
+}
+
+.menu-background {
+  background-color: red;
+}
+
+.title-menu {
+  font-weight: 800;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+.description-menu {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.price-menu {
+  color: #ff9900;
+  margin-left: 200px;
+}
+
 .quote {
   font-family: GurmukhiMN;
   font-size: 27px;
   text-align: center;
   padding-bottom: 10px;
-}
-
-span {
-  font-family: GurmukhiMN;
-  font-size: 60px;
-  text-align: center;
 }
 
 hr {
@@ -120,16 +152,16 @@ hr {
 }
 
 .button-reservation {
-  border: 1px solid #ffe2cb;
-  border-radius: 48px;
-  font-family: Lato;
-  font-weight: 300;
-  font-size: 20px;
-  color: #ffffff;
-  margin: 70 240px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  text-align: center;
+  width: 150px;
+  margin: auto;
+  padding-top: 200px;
+}
+
+.bg-img-reservation {
+  background-image: url(../img/reservation.png);
+  height: 400px;
+  background-position: center;
+  width: auto;
 }
 
 .Specialities-title {
@@ -140,7 +172,8 @@ hr {
 }
 
 .speciality-img {
-  width: 270px;
+  width: auto;
+  margin: auto;
 }
 
 .ingredient-img {
@@ -154,14 +187,14 @@ hr {
 
 .speciality-title {
   font-family: LaoMN;
-  font-size: 36px;
+  font-size: 18px;
   color: #ffffff;
   letter-spacing: 0;
 }
 
 .speciality-description {
   font-family: Lato-Regular;
-  font-size: 18px;
+  font-size: 13px;
   color: #ffffff;
   letter-spacing: 0;
 }
@@ -171,6 +204,14 @@ footer {
   font-family: LaoMN;
   color: #ffffff;
   letter-spacing: 0;
+}
+
+.logo-insta {
+  width: 50px;
+}
+
+.logo-facebook {
+  width: 50px;
 }
 
 .footer-title {
