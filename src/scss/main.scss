@@ -138,22 +138,29 @@ header {
 }
 
 .ingredient-img-1 {
-  width: 121px;
   position: relative;
+  top: 20px;
+
+  img {
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: solid 2px rgb(255, 123, 47);
+    position: absolute;
+    top: -10%;
+    left: -66%;
+  }
 }
 
 @media (max-width: 750px) {
   .ingredient-img-1 {
     display: none;
   }
-}
-
-.golden-box-1 {
-  width: 121px;
-  z-index: 1;
-  position: relative;
-  left: 130px;
-  top: 100px;
 }
 
 @media (max-width: 750px) {
@@ -172,6 +179,15 @@ header {
   margin-right: 21px;
 }
 
+@media (min-width: 992px) {
+  .speciality-title-1 {
+    font-size: 46px;
+    position: relative;
+    right: 190px;
+    top: -130px;
+  }
+}
+
 .speciality-description-1 {
   font-family: Lato-Regular;
   font-size: 13px;
@@ -180,6 +196,15 @@ header {
   padding-bottom: 30px;
   margin-left: 21px;
   margin-right: 21px;
+}
+
+@media (min-width: 992px) {
+  .speciality-description-1 {
+    font-size: 25px;
+    position: relative;
+    top: -130px;
+    right: 190px;
+  }
 }
 
 //SPECIAL 1
@@ -200,30 +225,38 @@ header {
   margin-right: 21px;
 }
 
+@media (min-width: 750px) {
+  .speciality-img-2 {
+    position: relative;
+    right: -330px;
+    top: 80px;
+  }
+}
+
 .ingredient-img-2 {
-  width: 121px;
-  margin-left: 21px;
   position: relative;
-  left: 170px;
-  top: 50px;
+  top: 60px;
+  right: -440;
+  z-index: 1;
+
+  img {
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: solid 2px rgb(255, 123, 47);
+    position: absolute;
+    top: -20%;
+    left: -56%;
+  }
 }
 
 @media (max-width: 750px) {
   .ingredient-img-2 {
-    display: none;
-  }
-}
-
-.golden-box-2 {
-  width: 121px;
-  z-index: 1;
-  position: relative;
-  left: 80px;
-  bottom: 20px;
-}
-
-@media (max-width: 750px) {
-  .golden-box-2 {
     display: none;
   }
 }
@@ -238,6 +271,15 @@ header {
   margin-right: 21px;
 }
 
+@media (min-width: 992px) {
+  .speciality-title-2 {
+    font-size: 46px;
+    position: relative;
+    top: -120px;
+    right: 80px;
+  }
+}
+
 .speciality-description-2 {
   font-family: Lato-Regular;
   font-size: 13px;
@@ -248,13 +290,21 @@ header {
   margin-right: 21px;
 }
 
+@media (min-width: 992px) {
+  .speciality-description-2 {
+    font-size: 25px;
+    position: relative;
+    top: -130px;
+    right: 80px;
+  }
+}
+
 //SPECIAL 2
 
 //SPECIAL 3
 
 .speciality-3 {
   padding-top: 20px;
-  padding-bottom: 90px;
   background-image: url(../img/grey-bg.png);
   background-size: cover;
 }
@@ -279,7 +329,7 @@ header {
     display: block;
     height: 100%;
     width: 100%;
-    border: solid px rgb(255, 123, 47);
+    border: solid 2px rgb(255, 123, 47);
     position: absolute;
     top: -10%;
     left: -66%;
@@ -290,14 +340,6 @@ header {
   .ingredient-img-3 {
     display: none;
   }
-}
-
-.golden-box-3 {
-  width: 121px;
-  z-index: 1;
-  position: relative;
-  right: 70px;
-  bottom: 20px;
 }
 
 @media (max-width: 750px) {
@@ -319,6 +361,9 @@ header {
 @media (min-width: 992px) {
   .speciality-title-3 {
     font-size: 46px;
+    position: relative;
+    right: 130px;
+    top: -160px;
   }
 }
 
@@ -326,10 +371,17 @@ header {
   font-family: Lato-Regular;
   font-size: 13px;
   color: #ffffff;
-  letter-spacing: 0;
-  padding-bottom: 10px;
   margin-left: 21px;
   margin-right: 21px;
+}
+
+@media (min-width: 992px) {
+  .speciality-description-3 {
+    font-size: 25px;
+    position: relative;
+    top: -160px;
+    right: 130px;
+  }
 }
 
 //SPECIAL 3
@@ -350,12 +402,15 @@ header {
   font-size: 20px;
   color: #ffffff;
   letter-spacing: 0;
+  height: auto;
 }
 
-@media (max-width: 750px) {
+@media (min-width: 992px) {
   .menu-section {
-    height: 600px;
+    height: 1000px;
     line-height: 20px;
+    margin: auto;
+    width: 908px;
   }
 }
 
@@ -364,6 +419,12 @@ header {
   font-size: 25px;
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+@media (min-width: 750px) {
+  .main-title-menu {
+    font-size: 40px;
+  }
 }
 
 .title-decoration {
@@ -422,6 +483,14 @@ header {
   padding-top: 40px;
 }
 
+@media (min-width: 992px) {
+  .description-menu {
+    position: relative;
+    left: 20px;
+    font-size: 18px;
+  }
+}
+
 .text-menu-2 {
   padding-bottom: 40px;
 }
@@ -438,12 +507,16 @@ header {
   font-family: GurmukhiMN;
   font-size: 27px;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
 
 hr {
-  width: 40px;
+  width: 590px;
   margin: auto;
+  height: 2px;
+  background-color: #ff9900;
+  border: none;
 }
 
 //QUOTE
@@ -451,7 +524,7 @@ hr {
 //RESERVATION
 
 .reservation-section {
-  padding-top: 20px;
+  padding-top: 100px;
   padding-bottom: 34px;
 }
 
@@ -465,7 +538,6 @@ hr {
   background-image: url(../img/reservation.png);
   height: 400px;
   background-position: center;
-  width: auto;
 }
 
 //RESERVATION
