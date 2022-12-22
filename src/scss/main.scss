@@ -57,9 +57,15 @@ video {
 }
 
 @font-face {
-  font-family: "times-sans";
-  src: url("../font/times-sans-font/TimesSansSerif.woff") format("woff)"),
-    url("../font/times-sans-font/TimesSansSerif.woff2") format("woff2");
+  font-family: "Lao-default";
+  src: url("../font/Lao-MN-font/LaoMN.woff") format("woff)"),
+    url("../font/Lao-MN-font/LaoMN.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lao-bold";
+  src: url("../font/Lao-MN-font/LaoMN-Bold.woff") format("woff)"),
+    url("../font/Lao-MN-font/LaoMN-Bold.woff2") format("woff2");
 }
 
 body {
@@ -109,7 +115,7 @@ header {
 }
 
 .navigation-bar {
-  font-family: LaoMN;
+  font-family: "Lao-default";
   font-size: 16px;
   text-align: center;
   display: flex;
@@ -127,6 +133,88 @@ header {
     display: none;
   }
 }
+//burger menu
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 3;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fffefd;
+  transition-duration: 0.25s;
+}
+.menu__btn > span::before {
+  content: "";
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+@media (min-width: 750px) {
+  .menu__btn {
+    display: none;
+  }
+}
+
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #161616;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+  z-index: 1;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: rgb(255, 255, 255);
+  font-family: "lato-default";
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.25s;
+}
+.menu__item:hover {
+  background-color: #ffa71a;
+}
+//burger menu
 
 //HEADER
 
@@ -140,7 +228,7 @@ header {
 }
 
 .Specialities-title {
-  font-family: LaoMN;
+  font-family: "Lao-default";
   font-size: 29px;
   letter-spacing: 0;
   padding-top: 47px;
@@ -189,7 +277,7 @@ header {
 }
 
 .speciality-title-1 {
-  font-family: times-sans;
+  font-family: "Lao-default";
   font-size: 18px;
   color: #ffffff;
   letter-spacing: 0;
@@ -265,7 +353,7 @@ header {
 @media (min-width: 750px) {
   .speciality-img-2 {
     position: relative;
-    right: -330px;
+    right: -220px;
     top: 80px;
   }
 }
@@ -273,7 +361,7 @@ header {
 .ingredient-img-2 {
   position: relative;
   top: 60px;
-  right: -440;
+  right: -300;
   z-index: 1;
 
   img {
@@ -299,7 +387,7 @@ header {
 }
 
 .speciality-title-2 {
-  font-family: times-sans;
+  font-family: "Lao-default";
   font-size: 18px;
   color: #ffffff;
   letter-spacing: 0;
@@ -405,7 +493,7 @@ header {
 }
 
 .speciality-title-3 {
-  font-family: "times-sans";
+  font-family: "Lao-default";
   font-size: 18px;
   color: #ffffff;
   padding-top: 20px;
@@ -478,6 +566,7 @@ header {
   color: #ffffff;
   letter-spacing: 0;
   height: auto;
+  z-index: -1;
 }
 
 @media (min-width: 992px) {
@@ -507,7 +596,7 @@ header {
 }
 
 .title-menu {
-  font-family: "times-sans";
+  font-family: "Lao-bold";
   font-weight: 800;
   font-size: 18px;
   padding-bottom: 5px;
@@ -580,7 +669,7 @@ header {
 //QUOTE
 
 .signature {
-  font-family: "times-sans";
+  font-family: "Lao-default";
   font-size: 19px;
   color: #ffffff;
   letter-spacing: 0;
@@ -589,13 +678,41 @@ header {
   bottom: 20px;
 }
 
+@media (min-width: 750px) {
+  .signature {
+    font-size: 26px;
+    position: relative;
+    left: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .signature {
+    font-size: 36px;
+    position: relative;
+    left: 790px;
+  }
+}
+
 .quote {
-  font-family: "times-sans";
+  font-family: "Lao-default";
   font-size: 27px;
   text-align: center;
   padding-bottom: 50px;
   padding-top: 30px;
   margin: auto;
+}
+
+@media (min-width: 750px) {
+  .quote {
+    font-size: 27px;
+  }
+}
+
+@media (min-width: 992px) {
+  .quote {
+    font-size: 46px;
+  }
 }
 
 hr {
@@ -633,7 +750,7 @@ hr {
 
 footer {
   background-color: black;
-  font-family: "times-sans";
+  font-family: "Lao-default";
   color: #ffffff;
   letter-spacing: 0;
   padding-top: 20px;
@@ -645,8 +762,38 @@ footer {
   left: 40px;
 }
 
+@media (min-width: 750px) {
+  .logo-insta {
+    position: relative;
+    left: 85px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-insta {
+    position: relative;
+    bottom: 80px;
+    left: 790px;
+  }
+}
+
 .logo-facebook {
   width: 50px;
+}
+
+@media (min-width: 750px) {
+  .logo-facebook {
+    position: relative;
+    left: -15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logo-facebook {
+    position: relative;
+    left: 550px;
+    bottom: 80px;
+  }
 }
 
 .footer-title {
