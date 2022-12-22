@@ -44,9 +44,28 @@ video {
 // base rules
 // ==================================== */
 
+@font-face {
+  font-family: "lato-hairline";
+  src: url("../font/lato-font/Lato-Hairline.woff") format("woff)"),
+    url("../font/lato-font/Lato-Hairline.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "lato-default";
+  src: url("../font/lato-font/Lato-Regular.woff") format("woff)"),
+    url("../font/lato-font/Lato-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "times-sans";
+  src: url("../font/times-sans-font/TimesSansSerif.woff") format("woff)"),
+    url("../font/times-sans-font/TimesSansSerif.woff2") format("woff2");
+}
+
 body {
   background-color: #313030;
   color: white;
+  font-family: "lato-default";
 }
 
 a {
@@ -75,10 +94,10 @@ header {
 }
 
 .introduction-text {
-  font-family: Lato-Light;
+  font-family: "lato-default";
+  font-weight: 300px;
   font-size: 26px;
   color: #ffffff;
-  letter-spacing: 0;
   text-align: center;
   padding-top: 280px;
 }
@@ -170,13 +189,22 @@ header {
 }
 
 .speciality-title-1 {
-  font-family: LaoMN;
+  font-family: times-sans;
   font-size: 18px;
   color: #ffffff;
   letter-spacing: 0;
   padding-top: 20px;
   margin-left: 21px;
   margin-right: 21px;
+}
+
+@media (min-width: 750px) {
+  .speciality-title-1 {
+    font-size: 30px;
+    position: relative;
+    right: 155px;
+    top: -80px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -189,13 +217,22 @@ header {
 }
 
 .speciality-description-1 {
-  font-family: Lato-Regular;
-  font-size: 13px;
+  font-family: "Lato-default";
+  font-size: 14px;
   color: #ffffff;
-  letter-spacing: 0;
   padding-bottom: 30px;
   margin-left: 21px;
   margin-right: 21px;
+  padding-top: 10px;
+}
+
+@media (min-width: 750px) {
+  .speciality-description-1 {
+    font-size: 18px;
+    position: relative;
+    top: -80px;
+    right: 150px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -262,13 +299,22 @@ header {
 }
 
 .speciality-title-2 {
-  font-family: LaoMN;
+  font-family: times-sans;
   font-size: 18px;
   color: #ffffff;
   letter-spacing: 0;
   padding-top: 20px;
   margin-left: 21px;
   margin-right: 21px;
+}
+
+@media (min-width: 750px) {
+  .speciality-title-2 {
+    font-size: 36px;
+    position: relative;
+    top: -120px;
+    right: 80px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -281,13 +327,23 @@ header {
 }
 
 .speciality-description-2 {
-  font-family: Lato-Regular;
-  font-size: 13px;
+  font-family: "lato-default";
+  font-size: 14px;
   color: #ffffff;
   letter-spacing: 0;
   padding-bottom: 30px;
   margin-left: 21px;
   margin-right: 21px;
+  padding-top: 10px;
+}
+
+@media (min-width: 750px) {
+  .speciality-description-2 {
+    font-size: 18px;
+    position: relative;
+    top: -115px;
+    right: 80px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -349,13 +405,22 @@ header {
 }
 
 .speciality-title-3 {
-  font-family: LaoMN;
+  font-family: "times-sans";
   font-size: 18px;
   color: #ffffff;
-  letter-spacing: 0;
   padding-top: 20px;
   margin-left: 21px;
   margin-right: 21px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 750px) {
+  .speciality-title-3 {
+    font-size: 36px;
+    position: relative;
+    right: 100px;
+    top: -80px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -368,11 +433,21 @@ header {
 }
 
 .speciality-description-3 {
-  font-family: Lato-Regular;
-  font-size: 13px;
+  font-family: "lato-default";
+  font-size: 14px;
   color: #ffffff;
   margin-left: 21px;
   margin-right: 21px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 750px) {
+  .speciality-description-3 {
+    font-size: 18px;
+    position: relative;
+    right: 100px;
+    top: -80px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -398,7 +473,7 @@ header {
   padding-bottom: 30px;
   border-radius: 30px;
   height: 600px;
-  font-family: LaoMN;
+  font-family: "lato-default";
   font-size: 20px;
   color: #ffffff;
   letter-spacing: 0;
@@ -432,6 +507,7 @@ header {
 }
 
 .title-menu {
+  font-family: "times-sans";
   font-weight: 800;
   font-size: 18px;
   padding-bottom: 5px;
@@ -503,16 +579,27 @@ header {
 
 //QUOTE
 
+.signature {
+  font-family: "times-sans";
+  font-size: 19px;
+  color: #ffffff;
+  letter-spacing: 0;
+  position: relative;
+  left: 480px;
+  bottom: 20px;
+}
+
 .quote {
-  font-family: GurmukhiMN;
+  font-family: "times-sans";
   font-size: 27px;
   text-align: center;
   padding-bottom: 50px;
   padding-top: 30px;
+  margin: auto;
 }
 
 hr {
-  width: 590px;
+  width: 500px;
   margin: auto;
   height: 2px;
   background-color: #ff9900;
@@ -546,7 +633,7 @@ hr {
 
 footer {
   background-color: black;
-  font-family: LaoMN;
+  font-family: "times-sans";
   color: #ffffff;
   letter-spacing: 0;
   padding-top: 20px;
