@@ -220,13 +220,6 @@ header {
 
 //SPECIAL 1
 
-.speciality-1 {
-  padding-top: 20px;
-  padding-bottom: 90px;
-  background-image: url(../img/grey-bg.png);
-  background-size: cover;
-}
-
 .Specialities-title {
   font-family: "Lao-default";
   font-size: 29px;
@@ -235,6 +228,13 @@ header {
   padding-bottom: 47px;
   margin-left: 21px;
   margin-right: 21px;
+}
+
+.speciality-1 {
+  padding-top: 20px;
+  padding-bottom: 90px;
+  background-image: url(../img/grey-bg.png);
+  background-size: cover;
 }
 
 .speciality-img-1 {
